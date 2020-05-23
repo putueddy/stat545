@@ -1,2 +1,2 @@
-# stat545
+# STAT545
 Data wrangling, exploration, and analysis with R
