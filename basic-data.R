@@ -102,8 +102,8 @@ barplot(table(gapminder$continent))
 #' In the figures below, we see how factors can be put to work in figures. 
 #' The continent factor is easily mapped into “facets” or colors and a legend 
 #' by the ggplot2 package.
-#+ r ggplotcontinent
 ## we exploit the fact that ggplot2 was installed and loaded via tidyverse
+#+ r ggplotcontinent
 p <- ggplot(filter(gapminder, continent != "Oceania"),
             aes(x = gdpPercap, y = lifeExp)) # initialize
 p <- p + scale_x_log10() # log the x axis the right way
