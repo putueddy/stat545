@@ -167,19 +167,19 @@ Here we use only base R graphics, which are very basic.
 plot(lifeExp ~ year, gapminder)
 ```
 
-![](basic-data_files/figure-gfm/r%20plot-1.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20plot-1.png)<!-- -->
 
 ``` r
 plot(lifeExp ~ gdpPercap, gapminder)
 ```
 
-![](basic-data_files/figure-gfm/r%20plot-2.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20plot-2.png)<!-- -->
 
 ``` r
 plot(lifeExp ~ log(gdpPercap), gapminder)
 ```
 
-![](basic-data_files/figure-gfm/r%20plot-3.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20plot-3.png)<!-- -->
 
 ### 2\. Look at the variables inside a data frame
 
@@ -195,7 +195,7 @@ summary(gapminder$lifeExp)
 hist(gapminder$lifeExp)
 ```
 
-![](basic-data_files/figure-gfm/r%20lifeExp-1.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20lifeExp-1.png)<!-- -->
 
 The year variable is an integer variable, but since there are so few
 unique values it also functions a bit like a categorical variable.
@@ -244,7 +244,7 @@ table(gapminder$continent)
 barplot(table(gapminder$continent))
 ```
 
-![](basic-data_files/figure-gfm/r%20tablecontinent-1.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20tablecontinent-1.png)<!-- -->
 
 In the figures below, we see how factors can be put to work in figures.
 The continent factor is easily mapped into “facets” or colors and a
@@ -252,26 +252,29 @@ legend by the ggplot2 package.
 
 ``` r
 ## we exploit the fact that ggplot2 was installed and loaded via tidyverse
+```
+
+``` r
 p <- ggplot(filter(gapminder, continent != "Oceania"),
             aes(x = gdpPercap, y = lifeExp)) # initialize
 p <- p + scale_x_log10() # log the x axis the right way
 p + geom_point() # scatterplot
 ```
 
-![](basic-data_files/figure-gfm/r%20ggplotcontinent-1.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20ggplotcontinent-1.png)<!-- -->
 
 ``` r
 p + geom_point(aes(color = continent)) # map continent color
 ```
 
-![](basic-data_files/figure-gfm/r%20ggplotcontinent-2.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20ggplotcontinent-2.png)<!-- -->
 
 ``` r
 p + geom_point(alpha = (1/3), size = 3) + geom_smooth(lwd = 3, se = FALSE) # geom_smooth() using method = 'gam' and formula 'y ~ s(x, bs = "cs)'
 ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 ```
 
-![](basic-data_files/figure-gfm/r%20ggplotcontinent-3.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20ggplotcontinent-3.png)<!-- -->
 
 ``` r
 p + geom_point(alpha = (1/3), size = 3) + facet_wrap(~ continent) + 
@@ -279,4 +282,4 @@ p + geom_point(alpha = (1/3), size = 3) + facet_wrap(~ continent) +
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-![](basic-data_files/figure-gfm/r%20ggplotcontinent-4.png)<!-- -->
+![](01-basic-data_files/figure-gfm/r%20ggplotcontinent-4.png)<!-- -->
