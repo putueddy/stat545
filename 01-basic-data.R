@@ -5,10 +5,10 @@
 #' output: github_document
 #' ---
 
-#' ### 1. Meet the `gapminder` data frame or "tibble" 
 #+ r setup, include=FALSE
 knitr::opts_chunk$set(echo = TRUE, collapse = TRUE)
 
+#' ### 1. Meet the `gapminder` data frame or "tibble" 
 #' Install the Gapminder data from CRAN
 #+ r install, eval=FALSE
 install.packages("gapminder")
