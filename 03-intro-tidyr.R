@@ -175,3 +175,12 @@ lotr_tidy %>%
 #' Practicing with `spread()`: let's get one variable per Race
 lotr_tidy %>%
   spread(key = Race, value = Words)
+
+#' Practicing with `spread()`: let's get one variable per Gender
+lotr_tidy %>%
+  spread(key = Gender, value = Words)
+
+#' Practicing with `spread()`... and `unite()`
+lotr_tidy %>%
+  unite(Race_Gender, Race, Gender) %>%
+  spread(key = Race_Gender, value = Words)
