@@ -15,7 +15,11 @@ Load forcats and gapminder
 library(gapminder)
 library(tidyverse)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──
+=======
+## ── Attaching packages ───────────────────────────────────────── tidyverse 1.3.0 ──
+>>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
 =======
 ## ── Attaching packages ───────────────────────────────────────── tidyverse 1.3.0 ──
 >>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
@@ -24,7 +28,11 @@ library(tidyverse)
 ## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+=======
+## ── Conflicts ──────────────────────────────────────────── tidyverse_conflicts() ──
+>>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
 =======
 ## ── Conflicts ──────────────────────────────────────────── tidyverse_conflicts() ──
 >>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
