@@ -14,28 +14,12 @@ Load forcats and gapminder
 ``` r
 library(gapminder)
 library(tidyverse)
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──
-=======
-## ── Attaching packages ───────────────────────────────────────── tidyverse 1.3.0 ──
->>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
-=======
-## ── Attaching packages ───────────────────────────────────────── tidyverse 1.3.0 ──
->>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
 ## ✓ ggplot2 3.3.1     ✓ purrr   0.3.4
 ## ✓ tibble  3.0.1     ✓ dplyr   1.0.0
 ## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-=======
-## ── Conflicts ──────────────────────────────────────────── tidyverse_conflicts() ──
->>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
-=======
-## ── Conflicts ──────────────────────────────────────────── tidyverse_conflicts() ──
->>>>>>> 77f7b9cdd340c8f63823df96d549906b48d45acb
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ```
